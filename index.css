@@ -1,0 +1,105 @@
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html,
+body {
+  width: 98%;
+  font-size: 10px;
+  padding: 1rem 0.8rem;
+  font-family: 'Open Sans', sans-serif;
+}
+
+.header {
+  color: #101326;
+}
+
+h1 {
+  font-size: 3.5rem;
+}
+
+.header span {
+  opacity: 0.5;
+  display: block;
+  font-size: 1.5rem;
+  margin-top: 1.7rem;
+}
+
+.benefits {
+  height: 25rem;
+  display: flex;
+  margin: 4rem 0;
+  background: #e0fbed;
+  border-radius: 2.4rem;
+  flex-direction: column;
+  justify-content: space-evenly;
+}
+
+.benefit {
+  padding: 1rem;
+  color: #101326;
+  padding-left: 5rem;
+  position: relative;
+}
+
+.benefit::before {
+  content: '';
+  height: 30%;
+  width: 2rem;
+  left: 2.3rem;
+  top: 2.4rem;
+  position: absolute;
+  background: url('./assets/svgs/checkmark.svg') no-repeat center;
+}
+
+.benefit > * {
+  padding: 0.2rem 0;
+}
+
+.benefit__tagline {
+  opacity: 0.4;
+  font-size: 1.2rem;
+}
+
+.benefit__text {
+  font-weight: bold;
+  font-size: 1.3rem;
+}
+
+.cta {
+  width: 100%;
+  border: none;
+  display: flex;
+  height: 5.5rem;
+  font-size: 1.8rem;
+  margin-top: 3.8rem;
+  align-items: center;
+  font-weight: bolder;
+  border-radius: 2.4rem;
+  justify-content: center;
+  background-color: #68f3a8;
+}
+
+.cta:focus {
+  outline: none;
+}
+
+.attribution {
+  width: 18.9rem;
+  height: 5.2rem;
+  margin: 10rem auto 0;
+  font-size: 1.5rem;
+  text-align: center;
+  padding: 1.5rem;
+  border-radius: 2.4rem;
+  background-color: #e8f6ef;
+}
+
+.attribution span {
+  color: #0d145c;
+  font-weight: bold;
+}
